@@ -112,3 +112,5 @@ $('.slider').each(function() {
     
     advance();
   });
+
+  $('.carrosel').slick();
