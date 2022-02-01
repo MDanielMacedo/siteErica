@@ -18,144 +18,156 @@
 </head>
 
 <body>
-  <nav id="navbar" class="">
-    <div class="nav-wrapper">
-      <!-- Navbar Logo -->
-      <div class="logo">
-        <!-- Logo Placeholder for Inlustration -->
-        <a href="#home"><img src="imagem/cartaoErica-70.jpeg" alt="Logo"></a>
+  <header>
+    <nav id="navbar" class="">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <a href="#home"><img src="imagem/cartaoErica-70.jpeg" alt="Logo"></a>
+        </div>
+
+        <!-- Menu -->
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#delicias">Nossas Delícias</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <!-- Navbar Links -->
-      <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#delicias">Nossas Delícias</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-carrosel" id="home">
-    <div class="slider">
-      <img src="imagem//birthday1.jpg" alt="bolo1">
-      <img src="imagem/birthday2.jpg" alt="bolo2">
-      <img src="imagem/cake-1284548_1280.jpg" alt="bolo3">
-      <img src="imagem/cake-1850011_1280.jpg" alt="bolo4">
-      <img src="imagem/cake-1869227_1280.jpg" alt="bolo5">
-      <img src="imagem/cake-1954054_1280.jpg" alt="bolo6">
-      <img src="imagem/cake-1971552_1280.jpg" alt="bolo7">
-    </div>
-  </div>
-
-  <!-- Flip Cards -->
-  <div class="container-flip" id="delicias">
-    <div class="wrapper">
-      <h1>Nossas Delícias</h1>
-      <div class="cols">
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/birthday2-996.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Bolo Danone</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/birthday1.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/cake-1869227_1280.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/cake-1954054_1280.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/cake-2369978_1280.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/cake-2558610_1280.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/cake-6591719_1280.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url('imagem/cake-288280_1280.jpg');"></div>
-            <div class="back">
-              <div class="inner">
-                <span>Lorem ipsum</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Principal -->
+  <main>
+    <div class="container-carrosel" id="home">
+      <div class="slider">
+        <img src="imagem//birthday1.jpg" alt="bolo1">
+        <img src="imagem/birthday2.jpg" alt="bolo2">
+        <img src="imagem/cake-1284548_1280.jpg" alt="bolo3">
+        <img src="imagem/cake-1850011_1280.jpg" alt="bolo4">
+        <img src="imagem/cake-1869227_1280.jpg" alt="bolo5">
+        <img src="imagem/cake-1954054_1280.jpg" alt="bolo6">
+        <img src="imagem/cake-1971552_1280.jpg" alt="bolo7">
       </div>
     </div>
-  </div>
-    <!-- Slick Sliver Js -->
-    <script src="js/jquery.js"></script>
-    <script src="lib/slick-1.8.1/slick/slick.js"></script>
-    <script src="js/script.js"></script>
+  </main>
+
+  <!-- Delícias-->
+  <section>
+    <div class="container-flip" id="delicias">
+      <div class="wrapper">
+        <h1>Nossas Delícias</h1>
+        <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/birthday2-996.jpg');"></div>
+              <div class="back" style="background-image: url('imagem/birthday2-996.jpg');">
+                <div class="inner">
+                  <span>Bolo Danone</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/birthday1.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/cake-1869227_1280.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/cake-1954054_1280.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/cake-2369978_1280.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/cake-2558610_1280.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/cake-6591719_1280.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url('imagem/cake-288280_1280.jpg');"></div>
+              <div class="back">
+                <div class="inner">
+                  <span>Lorem ipsum</span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mim -->
+
+<section>
+  
+</section>
+  <script src="js/jquery.js"></script>
+  <script src="lib/slick-1.8.1/slick/slick.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

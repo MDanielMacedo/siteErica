@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Arizonia&family=Pacifico&display=swap');
 * {
     border: 0;
     box-sizing: border-box;
@@ -17,7 +18,7 @@ body {
 
 a {
     color: inherit;
-    font-family: inherit;
+    font-family: 'Arizonia', cursive;
     font-size: inherit;
     text-decoration: none;
 }
@@ -31,7 +32,7 @@ a {
     color: rgb(13, 26, 38);
     position: fixed;
     top: 0;
-    height: 60px;
+    height: 70px;
     line-height: 60px;
     width: 100vw;
     z-index: 10;
@@ -57,15 +58,12 @@ a {
 
 .logo {
     float: left;
-    margin-left: 28px;
     height: 60px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 @media(max-width: 768px) {
     .logo {
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }
 
@@ -97,26 +95,40 @@ a {
 }
 
 #navbar li a {
-    color: rgb(13, 26, 38);
+    color: #967D69;
     display: block;
-    font-size: 0.7em;
+    font-size: 1.7em;
+    font-weight: 900;
     height: 50px;
     letter-spacing: 1px;
-    margin: 0 20px;
-    padding: 0 4px;
+    margin: 0 14px;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
 }
 
 #navbar li a:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: rgb(28, 121, 184);
+    color: #E7686F;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
+
+@media(max-width: 1170px){
+    #navbar li a{
+       font-size: 0.8em;
+       margin: 0 12px;
+    }
+}
+@media(max-width: 960px){
+    #navbar li a{
+       font-size: 0.6em;
+       margin: 0 8px;
+    }
+}
+
 
 /* Animated Bottom Line */
 #navbar li a:before,
@@ -124,7 +136,7 @@ a {
     content: '';
     position: absolute;
     width: 0%;
-    height: 1px;
+    height: 2px;
     bottom: -1px;
     background: rgb(13, 26, 38);
 }
@@ -135,13 +147,13 @@ a {
 }
 
 #navbar li a:after {
-    background: rgb(13, 26, 38);
+    background: #967D69;
     right: 0;
     /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
 
 #navbar li a:hover:before {
-    background: rgb(13, 26, 38);
+    background: #E7686F;
     width: 100%;
     transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
 }
@@ -149,7 +161,7 @@ a {
 #navbar li a:hover:after {
     background: transparent;
     width: 100%;
-    /* transition: 0s; */
+    transition: 2s;
 }
 
 
@@ -477,6 +489,8 @@ a {
     background: url('http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png') 0 0 repeat-x;
 }
 
+/* Slide */
+
 .container-carrosel {
     width: 55%;
     height: 102vh;
@@ -491,15 +505,17 @@ a {
 .container-flip {
     padding: 2%;
     width: 100%;
-    height: 120vh;
-    background: white;
+    height: 130vh;
+    background: #fef8f7;
 }
+
+/* Card Flip */
 
 h1 {
     font-size: 2.5rem;
-    font-family: 'Montserrat';
+    font-family: 'Pacifico', cursive;
     font-weight: normal;
-    color: #444;
+    color: #967D69;
     text-align: center;
     margin: 2rem 0;
 }
@@ -556,6 +572,7 @@ h1 {
 }
 
 .back {
+    opacity: .6;
     background: #cedce7;
     background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
     background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
@@ -658,8 +675,8 @@ h1 {
 }
 
 .back .inner span {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: 'Montserrat';
+    color: #967D69;
+    font-family: 'Allura', cursive;
     font-weight: 300;
 }
 
