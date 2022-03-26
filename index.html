@@ -1,173 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erica Petrucio - Bolos & Doces</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Erica Petrúcio - Bolos & Doces</title>
 
-  <!-- Slick Slider -->
-  <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b62dc55883.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <header>
-    <nav id="navbar" class="">
-      <div class="nav-wrapper">
-        <!-- Navbar Logo -->
-        <div class="logo">
-          <a href="#home"><img src="imagem/cartaoErica-70.jpeg" alt="Logo"></a>
+  <!-- Barra de Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+              <div class="navbar-header">
+                    <button class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+                    <a href="#">
+                        <h4>Érica Petrúcio<span> Bolos & Doces</span></h4>
+                    </a>
+              </div>
+          
+              <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li class="navbar-dropdown"><a href="#">Delícias</a></li>
+                  <li class="navbar-dropdown">
+                    <a href="javascript://" class="dropdown-toggler" data-dropdown="produtos">
+                      Produtos <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown" id="produtos">
+                      <li><a href="#">Bolo Branco</a></li>
+                      <li><a href="#">Bolo Chocolate</a></li>
+                      <li><a href="#">Bolo Evento</a></li>
+                      <li><a href="#">Doces</a></li>
+                      <li><a href="#">Combos</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Sobre Mim</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slide -->
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img class="selected" src="https://unsplash.it/800/500" alt="">
+                <img src="https://unsplash.it/801/500" alt="">
+                <img src="https://unsplash.it/802/500" alt="">
+                <img src="https://unsplash.it/803/500" alt="">
+                <img src="https://unsplash.it/804/500" alt="">
+                <span class="material-icons prev">chevron_left</span>
+                <span class="material-icons next">chevron_right</span>
+            </div>
         </div>
+    </main>
 
-        <!-- Menu -->
-        <ul id="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#delicias">Nossas Delícias</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Principal -->
-  <main>
-    <div class="container-carrosel" id="home">
-      <div class="slider">
-        <img src="imagem//birthday1.jpg" alt="bolo1">
-        <img src="imagem/birthday2.jpg" alt="bolo2">
-        <img src="imagem/cake-1284548_1280.jpg" alt="bolo3">
-        <img src="imagem/cake-1850011_1280.jpg" alt="bolo4">
-        <img src="imagem/cake-1869227_1280.jpg" alt="bolo5">
-        <img src="imagem/cake-1954054_1280.jpg" alt="bolo6">
-        <img src="imagem/cake-1971552_1280.jpg" alt="bolo7">
-      </div>
-    </div>
-  </main>
-
-  <!-- Delícias-->
-  <section>
-    <div class="container-flip" id="delicias">
-      <div class="wrapper">
+    <!-- Card Flip -->
+    <section>
+      <div>
         <h1>Nossas Delícias</h1>
-        <div class="cols">
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/birthday2-996.jpg');"></div>
-              <div class="back" style="background-image: url('imagem/birthday2-996.jpg');">
-                <div class="inner">
-                  <span>Bolo Danone</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
+      </div>
+      <div class="container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
             </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/birthday1.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/cake-1869227_1280.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/cake-1954054_1280.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/cake-2369978_1280.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/cake-2558610_1280.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/cake-6591719_1280.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <div class="container">
-              <div class="front" style="background-image: url('imagem/cake-288280_1280.jpg');"></div>
-              <div class="back">
-                <div class="inner">
-                  <span>Lorem ipsum</span>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.
-                  </p>
-                </div>
-              </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Sobre mim -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./imagem/birthday1.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1> 
+              <p>Architect & Engineer</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- container -->
+    </section>
 
-<section>
-  
-</section>
-  <script src="js/jquery.js"></script>
-  <script src="lib/slick-1.8.1/slick/slick.js"></script>
-  <script src="js/script.js"></script>
+    <article>
+    </article>
+    <footer></footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
